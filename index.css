@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:Arial,sans-serif;
+    line-height:1.6;
+    min-height:200vh;
+}
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    background:transparent;
+    padding:15px 0 ;
+    transition:all 0.3s ease;
+    z-index:1000;
+}
+nav.scrolled{
+    background:#333;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a{
+    text-decoration:none;
+    color:black;
+    fontsize:18px;
+    font-weight:600;
+    padding:8px 12px;
+    border-radius:6px;
+    transition:all 0.3s ease;
+}
+nav ul li a:hover{
+    background:#ff9800;
+    color:#fff;
+}
+nav.scrolled ul li a{
+    color:#f5f5f5;
+}
+header{
+    height:100vh;
+    background:url('https://fastly.picsum.photos/id/1057/1920/1080.jpg?hmac=QX_UgQ7o8u_ekW41PgUVKtpuMEh3Ao9TduB30U8MLa0')no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:black;
+    font-size:3rem;
+}
+section{
+    padding:100px;
+    text-align:center;
+}
